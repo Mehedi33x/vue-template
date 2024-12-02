@@ -348,7 +348,7 @@ button:focus {
   background-position: center;
   background-size: cover; }
   .home_banner_area .banner_inner {
-    width: 100%; }
+    width: 90%; }
     .home_banner_area .banner_inner .home_right_img {
       padding-top: 197px; }
       @media (max-width: 1480px) {

@@ -5,7 +5,7 @@
             <div class="row justify-content-start align-items-center">
                 <div class="col-lg-5">
                     <div class="about_img">
-                        <img class="" src="/frontend/img/about-us.png" alt="">
+                        <img class="" src="/frontend/cv/mypic.jpg" alt="">
                     </div>
                 </div>
 
@@ -23,7 +23,7 @@
                             is in beast beginning signs open god you're gathering whose gathered cattle let.
                             Creature whales fruit unto meat the life beginning all in under give two.
                         </p>
-                        <a class="primary_btn" href="#"><span>Download CV</span></a>
+                        <a class="primary_btn tr-bg" :href="cvText" target="_blank"><span>Get CV</span></a>
                     </div>
                 </div>
             </div>
@@ -31,9 +31,7 @@
     </section>
     <!--================ End About Us Area =================-->
 </template>
-<script>
-export default {
-    name: "About",
-}
+<script setup>
+import {ref} from 'vue';
+const cvText = ref('/frontend/cv/CV_Mehedi.pdf');
 </script>
-<style></style>

@@ -14,11 +14,16 @@
                     </button>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav justify-content-end">
-                            
-                            <li class="nav-item"><router-link class="nav-link" :to="{ name:'home' }">Home</router-link></li>
-                            <li class="nav-item"><router-link class="nav-link" :to="{ name:'about-page' }">About</router-link></li>
-                            <li class="nav-item"><router-link class="nav-link" :to="{ name:'contact-us' }">Contact Us</router-link></li>
+                        <ul class="nav navbar-nav menu_nav justify-content-end" id="menu">
+
+                            <li class="nav-item"><router-link class="nav-link" :to="{ name: 'home' }">Home</router-link>
+                            </li>
+                            <li class="nav-item"><router-link class="nav-link"
+                                    :to="{ name: 'about-page' }">About</router-link></li>
+                            <li class="nav-item"><router-link class="nav-link"
+                                    :to="{ name: 'services' }">Service</router-link></li>
+                            <li class="nav-item"><router-link class="nav-link" :to="{ name: 'contact-us' }">Contact
+                                    Us</router-link></li>
                             <!-- 
                             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                             <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
@@ -40,7 +45,7 @@
                                     </li>
                                 </ul>
                             </li> -->
-                           
+
                         </ul>
                     </div>
                 </div>
@@ -49,3 +54,8 @@
     </header>
 </template>
 
+<style>
+#menu .router-link-exact-active {
+    color: blueviolet;
+}
+</style>
